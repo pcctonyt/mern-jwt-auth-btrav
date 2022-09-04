@@ -76,9 +76,15 @@ const loginUser = asyncHandler(async (req, res) => {
 // @desc    Get user data
 // @route   GET /api/users/me
 // @access  Private
-// protect routes coding starts at 30:02 second video at this getMe function public now changes to private, by creating a new middleware function called authMiddleware.js to check the token and keep the route protected
+// protect routes coding starts at 30:02 second video at this getMe function public now changes to private, by creating a new middleware function called authMiddleware.js to check the token and keep the route protected, it just gets whatever current user is authenticated
 const getMe = asyncHandler(async (req, res) => {
-    res.json({message: "Display user data"})
+    const {_id, name, email } = await User.findById(req.user.id)
+
+    res.status(200).json({
+        id: _id,
+        name,
+        email
+    })
 })
 
 //create a separate function to get used both in register and in login

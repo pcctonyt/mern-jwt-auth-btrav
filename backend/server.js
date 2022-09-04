@@ -21,4 +21,4 @@ app.use(errorHandler)
 app.listen(port, () => console.log(`Server started on port ${port}`))
 
 
-/* MongoDB's oSQL documents-database has collections, which are like tables in a relational database left off at 39:13 second video (25:47 second video is where the jwt token stuff starts, and 28:32 is where he starts testing the token coding in Postman)*/
+/* MongoDB's oSQL documents-database has collections, which are like tables in a relational database -- 1ST AND SECOND VIDEOS NOW BOTH DONE -- (25:47 second video is where the jwt token stuff starts, and 28:32 is where he starts testing the token coding in Postman) new git repo set up with the backupPostman.txt file, to prevent having to restart from the beginning again if further problems develop*/

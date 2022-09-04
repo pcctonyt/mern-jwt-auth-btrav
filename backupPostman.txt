@@ -1,0 +1,35 @@
+This is the Postman setup when I got the jwt token part to work at 39:13 done on the second video
+
+First Tab
+GET request
+http://localhost:5000/api/goals
+No key/values being sent in the body
+
+Second Tab
+POST request
+http://localhost:5000/api/users
+key/value pairs in the body:
+name:  Jane Doe
+email: jane@gmail.com
+password: 123456
+didn't have the token key yet
+
+Third Tab
+POST request
+http://localhost:5000/api/users/login
+key/value pairs in the body:
+email: john@gmail.com
+password: 123456
+
+the token key appears in the response object
+the token is not set in the body under the Auth menu
+
+
+Fourth Tab
+GET request
+http://localhost:5000/api/users/me?
+no key/value pairs in the body
+
+the Auth is set to bearer token and we copy that in from the third tab after we click send
+
+returns "Display user data" in the json object
