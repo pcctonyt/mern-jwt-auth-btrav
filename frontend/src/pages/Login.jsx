@@ -36,7 +36,7 @@ function Login() {
                     <input type="email" className="form-control" id="email" name="email" value={email} placeholder="Enter your email address" onChange={onChange} />
                 </div>
                 <div className="form-group">
-                    <input type="password" className="form-control" id="password" name="password" value={password} placeholder="Select your new password" onChange={onChange} />
+                    <input type="password" className="form-control" id="password" name="password" value={password} placeholder="Enter your password" onChange={onChange} />
                 </div>
                 
                 <div className="form-group">
